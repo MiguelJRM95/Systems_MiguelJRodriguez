@@ -39,12 +39,11 @@ fi
 # Then, continue with the following requirements
 
 #Creating the function 
-gitAutomateScript(){
-   git checkout $1
-   git checkout -b $2
-   mkdir $2
-   git add $2
-   git commit -m "New branch called $2"
-   git push --set-upstream origin $2
-   exit 5
-}
+
+git checkout $1
+git checkout -b $2
+mkdir $2
+git add $2
+git commit -m "New branch called $2"
+git push --set-upstream origin $2
+
