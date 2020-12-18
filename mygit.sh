@@ -43,7 +43,7 @@ gitAutomateScript(){
    git checkout $1
    git checkout -b $2
    mkdir $2
-   git add -A
+   git add $2
    git commit -m "New branch called $1"
    git push
    exit 5
