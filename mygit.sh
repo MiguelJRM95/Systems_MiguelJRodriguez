@@ -43,6 +43,9 @@ fi
 git checkout $1
 git checkout -b $2
 mkdir $2
+cd $2/
+touch testScript.txt
+cd ..
 git add $2
 git commit -m "New branch called $2"
 git push --set-upstream origin $2
